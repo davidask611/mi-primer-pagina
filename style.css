@@ -1,11 +1,10 @@
 * {
 	padding: 0px;
 	margin: 0px;
-	box-sizing: border-box;
 }
 
 body {
-	background-color: darkcyan;
+	background-color: cornflowerblue;
 }
 
 /*aca se puso un flex para mostar horizontal.
@@ -50,7 +49,7 @@ nav div {
 }
 
 /*esto adapta para moviles,lo hace responsive.
-que no se deforme al achicar la ventana*/
+que no se deformeal achicar la ventana*/
 @media(max-width:700px) {
 	header {
 		flex-direction: column;
@@ -90,17 +89,13 @@ que no se deforme al achicar la ventana*/
 }
 
 .cuerpo {
-	display: grid;
+	display: flex;
 	flex-wrap: wrap;
-	/*justify-content: space-evenly;*/
-	grid-template-columns: auto auto auto;
+	justify-content: space-evenly;
 }
 
 .item {
-	border: solid;
-	width: 400px;
-	grid-column: auto auto auto;
-	/*margin: 10px;
+	margin: 10px;
 	display: flex;
 	display: inline-block;
 	text-align: center;
@@ -110,7 +105,6 @@ que no se deforme al achicar la ventana*/
 	border-color: violet;
 	border-radius: 30%;
 	background-color: white;
-	*/
 }
 
 #ir-arriba{
