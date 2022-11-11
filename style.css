@@ -1,0 +1,126 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: darkcyan;
+}
+
+/*aca se puso un flex para mostar horizontal.
+just,cont,space,betw,acomoda uno en cada punta*/
+header {
+	background-image: linear-gradient(chartreuse, yellow);
+	display: flex;
+	min-height: 100px;
+	justify-content: space-between;
+	color: blue;
+}
+
+/*height es altura*/
+#goku-chico {
+	display: flex;
+}
+
+.goku-chico {
+	width: 250px;
+}
+
+#goku-camina {
+	display: flex;
+}
+
+.goku-camina {
+	width: 250px;
+}
+
+/*aca se modifico el nav*/
+nav {
+	align-items: center;
+}
+
+/*aca se modifico el div del nav*/
+nav div {
+	text-align: center;
+}
+
+#banner {
+	margin-top: 30px;
+}
+
+/*esto adapta para moviles,lo hace responsive.
+que no se deforme al achicar la ventana*/
+@media(max-width:700px) {
+	header {
+		flex-direction: column;
+	}
+
+	#titulo {
+		margin-top: 10px;
+	}
+
+	#banner {
+		margin-top: 70px;
+	}
+}
+
+#contenedor-mega {
+	background-color: aqua;
+	color: red;
+	display: flex;
+	font-size: 6mm;
+	justify-content: center;
+}
+
+#mega {
+	margin-top: 10px;
+}
+
+#descripcion {
+	font-size: 6mm;
+	text-align: center;
+}
+
+.galeria {
+	border-radius: 10%;
+	max-width: 100%;
+	align-items: center;
+
+}
+
+.cuerpo {
+	display: grid;
+	flex-wrap: wrap;
+	/*justify-content: space-evenly;*/
+	grid-template-columns: auto auto auto;
+}
+
+.item {
+	border: solid;
+	width: 400px;
+	grid-column: auto auto auto;
+	/*margin: 10px;
+	display: flex;
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	padding: 50px;
+	border: solid;
+	border-color: violet;
+	border-radius: 30%;
+	background-color: white;
+	*/
+}
+
+#ir-arriba{
+	color: red;
+	font-weight: bold;
+	text-align: center;
+	font-size: 8mm;
+	text-decoration: none;
+}
+
+#creado{
+	color: yellow;
+}
